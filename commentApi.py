@@ -11,7 +11,9 @@ app.secret_key = os.urandom(32)
 @app.route('/comments', methods=['GET', 'POST'])
 def comment_api():
 
-    user_ip = request.headers.get('X-Forwarded-For')
+    user_ip = request.headers.get('X-Forwarded-For', None)
+    if not user_ip:
+        user_ip = request.remote_addr
     response = {
         'status': None,
         'data': None

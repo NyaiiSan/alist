@@ -5,6 +5,13 @@
     line-height: 1.25;
 }
 
+.comInputBox {
+    flex: 1 1 0%;
+    padding-inline-start: var(--hope-space-5);
+    padding-inline-end: var(--hope-space-5);
+    padding-top: var(--hope-space-2);
+    padding-bottom: var(--hope-space-2);
+}
 
 .comTextInput {
     resize: none; /* 禁止调整大小 */
@@ -13,8 +20,9 @@
     width: 100%;
     min-width: 0px;
     outline: none;
-    border-radius: var(--hope-radii-sm);
-    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: var(--hope-radii-lg);
+    background-color: var(--hope-colors-neutral3);
     padding-top: var(--hope-space-3);
     padding-bottom: var(--hope-space-3);
     padding-inline-start: var(--hope-space-3);
@@ -23,6 +31,11 @@
     font-size: var(--hope-fontSizes-base);
     line-height: var(--hope-lineHeights-base);
     transition: color 250ms, border-color 250ms, background-color 250ms, box-shadow 250ms;
+}
+
+.comTextInput:focus {
+    box-shadow: unset;
+    border-color: var(--hope-colors-info8);
 }
 
 .comButton {

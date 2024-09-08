@@ -28,11 +28,11 @@ function commentsLayout() {
     commentSendBox = document.createElement("div");
     // 输入框布局
     sendInputBox = document.createElement("div");
-    sendInputBox.className = "hope-c-mWwdD hope-c-mWwdD-PJLV-scrollBehavior-outside hope-c-PJLV-ijhzIfm-css"
+    sendInputBox.className = "comInputBox";
     sendInput = document.createElement("textarea");
     sendInput.ariaLabel = "input-text";
     sendInput.rows = "4";
-    sendInput.className += "comTextInput hope-c-PJLV hope-c-kvTTWD-hYRNAb-variant-filled hope-c-kvTTWD-gfwxhr-size-md hope-c-PJLV-hbsPHc-cv hope-c-PJLV-ibtHApG-css";
+    sendInput.className += "comTextInput";
     sendInputBox.appendChild(sendInput);
     // 功能按钮布局
     sendButtonBox = document.createElement("div");
