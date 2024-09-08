@@ -1,0 +1,94 @@
+.comTitle {
+    margin-bottom: 30px;
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 1.25;
+}
+
+
+.comTextInput {
+    resize: none; /* 禁止调整大小 */
+    appearance: none;
+    position: relative;
+    width: 100%;
+    min-width: 0px;
+    outline: none;
+    border-radius: var(--hope-radii-sm);
+    background-color: transparent;
+    padding-top: var(--hope-space-3);
+    padding-bottom: var(--hope-space-3);
+    padding-inline-start: var(--hope-space-3);
+    padding-inline-end: var(--hope-space-3);
+    color: var(--hope-colors-neutral12);
+    font-size: var(--hope-fontSizes-base);
+    line-height: var(--hope-lineHeights-base);
+    transition: color 250ms, border-color 250ms, background-color 250ms, box-shadow 250ms;
+}
+
+.comButton {
+    height: var(--hope-sizes-10);
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-inline-start: var(--hope-space-4);
+    padding-inline-end: var(--hope-space-4);
+    font-size: var(--hope-fontSizes-base);
+}
+
+.comButton:focus {
+    outline: none;
+}
+
+.comButtonBox {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: var(--hope-space-3);
+    padding-inline-start: var(--hope-space-5);
+    padding-inline-end: var(--hope-space-5);
+    padding-bottom: var(--hope-space-5);
+}
+
+.comment-item {
+    flex-direction: column;
+    align-items: left;
+    width: var(--hope-sizes-full);
+    padding: var(--hope-space-2);
+    border-radius: var(--hope-radii-lg);
+    transition: 0.3s;
+    transition-behavior: normal;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: all;
+}
+
+.comment-item:hover {
+    transform: scale(1.01);
+    background-color: rgba(132, 133, 141, 0.18);
+}
+
+.mes_info {
+    margin: 0px;
+}
+
+.user_name {
+    font-size: 1.25em;
+    color: #000;
+
+    margin: 5px 0px 5px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+}
+
+.mes_time {
+    font-size: 14px;
+    color: #707070;
+    margin: 10px 0px 10px;
+    padding: 0px 5px 0px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+}
